@@ -1,6 +1,6 @@
 #### Two functions are here, the visualisation and the numerical_predictions
-#### they are not meant to be used outside of core_simulations
-
+#### Those functions have no optional arguments and output in the global environment. 
+As such, they are not meant to be used outside of the core_simulations.R
 ###Numerical predictions, employed in core_simulations.R
 num_pred<-function(){
   for(i in 1:1000){
