@@ -1,24 +1,6 @@
-### This file defines a function that runs the Wright-Fisher DFE with sexes.
-#OUTPUT: a csv with all parameters as well as all statistics recorded. 
+### This file runs the simulations analyses of the manuscript.
 
-## Parameters
-# The following parameters are fixed within the function:
-# - N.min: minimum population size, starting value for expanding populations and floor values for declining populations (set to 10^3)
-# - N.max: maximum population size, ceiling value for expanding populations and starting values for declining populations  (set to 10^7)
-# - N.ct: population size for a stable population (set to 10^5)
-# - corr.sel: between sex correlation for selection (set to run for values of 0 to 1, with increments of 0.2)
-
-# The function uses the following arguments:
-# - n: number of traits or dimensionality (default is 50)
-# - n.ben.tofix: the number of net beneficial to fix before the simulation is considered complete (default is 10^3)
-# -  max.mutations: the maximum number of mutations that can be simulated before the simulations stop to avoid near infinite sims ( default id 10^9)
-# - m: standard deviation of the mutation effects per trait (scaled; default is 0.05)
-# - z: distance from phenotype to the optimum (assumed to be the same in each sex; default is 1)
-# - R: rate of population growth (default is 1, indicating constant population size)
-# - N0: population size at time 0 (default is 10^5)
-# - output.dir: path where to save output files (default is working directory)
-# - file.name: argument to define which parameter values should be shown in the file name of the output files. Options are a vector of minimum length 1 (e.g. file.name="R", or file.name=c("R", "z")), where "all" creates a file name indicating n, m, z, R and N0 (default is "all")
-# - visualize: TRUE/FALSE argument defining if plots (sm~sf and s.diff~s.mean) should be outputted or not (default is TRUE)
+HIGHLIGHT WHAT THE FILE DOES
 
 ################################################
 ## Wright - Fisher simulations
