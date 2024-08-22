@@ -1,10 +1,10 @@
 ### This file runs the simulations analyses of the manuscript.
 
-HIGHLIGHT WHAT THE FILE DOES
 
 ################################################
 ## Wright - Fisher simulations
 ################################################
+
 source(fixSA.netbenefit.R) # load the simulation function
 
 ################################################
