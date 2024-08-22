@@ -12,7 +12,7 @@ source("num_pred&visualise.R") # load the numerical prediction and visualise
 ## Run simulations
 ################################################
 
-dir <-"./"
+dir <-"results/" #output directory
 #simulations
 set.seed(123)
 for (R in seq(0.98,1.02,by=0.02)){
