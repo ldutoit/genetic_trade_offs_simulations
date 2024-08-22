@@ -5,7 +5,7 @@
 ## Wright - Fisher simulations
 ################################################
 
-source(fixSA.netbenefit.R) # load the simulation function
+source("fixSA.netbenefit.R") # load the simulation function
 
 ################################################
 ## Run simulations
