@@ -1,5 +1,4 @@
-### This file defines a function that runs the Wright-Fisher DFE with sexes.
-#OUTPUT: a csv with all parameters as well as all statistics recorded. 
+### This file defines a function that runs the Wright-Fisher distribution of fitness effects with sexes.
 
 ## Parameters
 # The following parameters are fixed within the function:
