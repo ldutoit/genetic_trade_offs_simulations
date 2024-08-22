@@ -5,6 +5,7 @@ The goal of this repository is to enhance reproducibility and to enable future r
 
 The following files are included:
   - [fixSA.netbenefit.R](fixSA.netbenefit.R) .This file defines a function that runs the Wright-Fisher distribution of fitness effects with sexes
-  - [core_simulations.R](core_simulations.R) . This file runs the simulations an produces the visualisation included in the manuscript.
+  - [core_simulations.R](core_simulations.R) . This file runs the simulations and produces the visualisation included in the manuscript.
+  - [num_pred&visualise.R](num_pred&visualise.R) . This file contains the numerical prediction function num_pred() and the visualise() function producing the simulations figure in the manuscript.  
 
 A set of example outputs are included in the folder [results](results).
