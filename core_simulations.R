@@ -1,7 +1,5 @@
 ### This file runs the simulations analyses of the manuscript.
 
-setwd("~/Downloads/genetic_trade_offs_simulations-main/")
-
 ################################################
 ## Wright - Fisher simulations
 ################################################
@@ -20,7 +18,7 @@ dir<-"results" #output directory , created if it does not exist.
 
 if (!dir.exists(dir)) {
   dir.create(dir)
-  message("Directory created.")
+  message(paste(dir,"Directory created."))
 } else {
   warning("Directory already exists.")
 }
@@ -61,6 +59,8 @@ num_pred()
 ################################################
 ## Overlay numerical predictions with simulations (n=50, z=1)
 ################################################
+
+#dir<-"example_results/"## If using example results, instead of new ones, uncomment
 
 # Main text figure (z = 1, n = 50)
 dec <- read.csv(paste0(dir,"table_n50_m0.05_z1_R0.98.csv"))
@@ -315,3 +315,4 @@ ct$Pr_SA <- ct$SA.ben.fix/ct$netben.fix
 ct$Pr_SA_new <- ct$netben.SA.mut/ct$netben.mut
 
 visualise()
+
