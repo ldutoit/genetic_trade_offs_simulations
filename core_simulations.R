@@ -13,7 +13,18 @@ source("num_pred&visualise.R") # load the numerical prediction and visualise
 ## Run simulations
 ################################################
 
-dir<-"~/Downloads/genetic_trade_offs_simulations-main/" #output directory
+
+
+dir<-"results" #output directory , created if it does not exist.
+
+
+if (!dir.exists(dir)) {
+  dir.create(dir)
+  message("Directory created.")
+} else {
+  warning("Directory already exists.")
+}
+
 #simulations
 set.seed(123)
 for (R in seq(0.98,1.02,by=0.02)){
