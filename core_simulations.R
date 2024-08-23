@@ -1,5 +1,6 @@
 ### This file runs the simulations analyses of the manuscript.
 
+setwd("~/Downloads/genetic_trade_offs_simulations-main/")
 
 ################################################
 ## Wright - Fisher simulations
@@ -12,7 +13,7 @@ source("num_pred&visualise.R") # load the numerical prediction and visualise
 ## Run simulations
 ################################################
 
-dir <-"results/" #output directory
+dir<-"~/Downloads/genetic_trade_offs_simulations-main/" #output directory
 #simulations
 set.seed(123)
 for (R in seq(0.98,1.02,by=0.02)){
@@ -121,6 +122,7 @@ ct$Pr_SA <- ct$SA.ben.fix/ct$netben.fix
 ct$Pr_SA_new <- ct$netben.SA.mut/ct$netben.mut
 
 visualise()
+
 ################################################
 ## Sup (n=25, z=1)
 ################################################
@@ -240,15 +242,7 @@ ct <- read.csv(paste0(dir,"table_n10_m0.05_z1_R1.csv"))
 ct$Pr_SA <- ct$SA.ben.fix/ct$netben.fix
 ct$Pr_SA_new <- ct$netben.SA.mut/ct$netben.mut
 
-plot(corr.sel.v2, Pr.SA.new, xlab = "Alignment of selection", ylab = "Proportion trade-off", type = "l", ylim = c(0, 1), lwd = 3, main="n=10, z=1")
-lines(corr.sel.v2, Pr.SA.decline, col = "palegreen", lwd = 3)
-points(x=dec$corr.sel,y=dec$Pr_SA,pch=19,col="palegreen")
-lines(corr.sel.v2, Pr.SA.est, col = "green3", lwd = 3)
-points(x=ct$corr.sel,y=ct$Pr_SA,pch=19,col="green3")
-lines(corr.sel.v2, Pr.SA.expand, col="darkgreen", lwd = 3)
-points(x=inc$corr.sel,y=inc$Pr_SA,pch=19,col="darkgreen")
-points(x=ct$corr.sel,y=ct$Pr_SA_new,pch=19)
-
+visualise()
 
 ################################################
 ## Sup (n=10, z=2)
