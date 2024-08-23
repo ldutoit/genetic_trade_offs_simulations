@@ -11,11 +11,10 @@ source("num_pred&visualise.R") # load the numerical prediction and visualise
 ## Run simulations
 ################################################
 
-
-
 dir<-"results" #output directory , created if it does not exist.
 
 
+#create output directory if needed
 if (!dir.exists(dir)) {
   dir.create(dir)
   message(paste(dir,"Directory created."))
