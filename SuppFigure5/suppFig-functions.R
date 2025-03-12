@@ -601,19 +601,3 @@ fixSA.netbenefit.asym <- function(n, n.ben.tofix, max.mutations,  m, R, output.d
 
 
 
-
-
-### RUN SIMULATIONS IF NEEDEED
-
-# Run the simulations for z.1 = z.2
-# dir = "simResults/"
- # fixSA.netbenefit.sym(n=50, n.ben.tofix = 10^4, max.mutations = 10^7, z=1, m=0.05, R = 1,    output.dir=dir, file.name="all")
- # fixSA.netbenefit.sym(n=50, n.ben.tofix = 10^4, max.mutations = 10^7, z=1, m=0.05, R = 1.02, output.dir=dir, file.name="all")
- # fixSA.netbenefit.sym(n=50, n.ben.tofix = 10^4, max.mutations = 10^7, z=1, m=0.05, R = 0.98, output.dir=dir, file.name="all")
-# Run the simulations for z.1 =/= z.2
-# fixSA.netbenefit.asym(n=50, n.ben.tofix = 10^4, max.mutations = 10^7,  m=0.05, R = 1,    output.dir=dir, file.name="all")
-# fixSA.netbenefit.asym(n=50, n.ben.tofix = 10^4, max.mutations = 10^7,  m=0.05, R = 1.02, output.dir=dir, file.name="all")
-# fixSA.netbenefit.asym(n=50, n.ben.tofix = 10^4, max.mutations = 10^7,  m=0.05, R = 0.98, output.dir=dir, file.name="all")
-
-
-
