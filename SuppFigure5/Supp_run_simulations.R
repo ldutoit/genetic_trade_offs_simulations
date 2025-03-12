@@ -11,7 +11,7 @@ source('./suppFig-functions.R')
 ## Run simulations
 ################################################
 
-dir<-"results/" # output directory , created if it does not exist. Finish by /
+dir<-"simResults/" # output directory, created if it does not exist. Finish by /
 
 
 #create output directory if needed
