@@ -1,5 +1,5 @@
 # genetic_trade_offs_simulations
-This repository contains the code necessary to replicate the simulations in Connallon et al.: Predicting the prevalence of genetic trade-offs among adaptive substitutions.
+This repository contains the code necessary to replicate the simulations in Connallon et al.: "Predicting the prevalence of genetic trade-offs among adaptive substitutions.". Evolution, 2024.
 
 The goal of this repository is to enhance reproducibility and to enable future research. For any questions, please post [here](https://github.com/ldutoit/genetic_trade_offs_simulations/issues).
 
